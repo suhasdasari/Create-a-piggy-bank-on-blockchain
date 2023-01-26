@@ -1,0 +1,14 @@
+//constructor is a special function that is called only once when the contract is deployed.
+
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.17;
+
+contract ConstructorIntro {
+    address public owner;
+    uint public num;
+
+    constructor() {
+        // Here the owner is set to the caller
+        owner = msg.sender;
+    }
+}
