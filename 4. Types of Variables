@@ -1,0 +1,22 @@
+//There are 3 types of variables in Solidity, local, state and global
+
+//State variables are stored on the blockchain. So you can save some data into a state variable, come back a week later and the data will still be there.
+//Local variables are declared inside functions and are not stored in the blockchain.
+//Global variables provide information about the blockchain
+
+//---------------- CODE ------------------
+
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.17;
+
+contract MyContract {
+
+    uint public myStateVariable; // this is a state variable
+    address addr = msg.sender; // this is a global variable
+
+    function func() external {
+    
+        uint notStateVariable = 123; // this is a Local variable
+    }
+}
+
