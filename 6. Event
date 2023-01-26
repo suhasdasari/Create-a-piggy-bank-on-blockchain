@@ -1,0 +1,13 @@
+//Events allow smart contracts to log data to the blockchain without using state variables.
+
+
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.17;
+
+contract Event {
+    event Log(string message, uint val); 
+
+    function examples() external {
+        emit Log("suhas", 1234);
+    }
+}
