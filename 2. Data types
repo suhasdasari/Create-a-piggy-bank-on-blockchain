@@ -4,6 +4,7 @@ pragma solidity ^0.8.17;
 //Data Types - values and reference >> following are value types
 
 contract ValueTypes {
+    string public greet = "hello World";
     bool public b = true;
     int public i = -111;
     uint public u = 123;
